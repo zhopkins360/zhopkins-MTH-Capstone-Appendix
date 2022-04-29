@@ -155,7 +155,7 @@ def solChecker(vertArr, faceMatrix):
     return True
 
 if __name__ == "__main__":
-    with open('C:/Users/Zack Hopkins/mthcap/mth495-spring2022/code/KevinSolutions/600cellSolutions.csv') as csvFile:
+    with open(filePath) as csvFile:
         #code for getting the solutions{} from csv
         csvReader = csv.reader(csvFile, delimiter=',')
         solutions = []
@@ -169,7 +169,7 @@ if __name__ == "__main__":
         #print(len(solutions[0]))
 
         #code for getting the faceMatrix from a csv
-        with open('C:/Users/Zack Hopkins/mthcap/mth495-spring2022/code/faceMatrices/sixhundredcell_3_corrected.csv') as faceCsvFile:
+        with open(filePath) as faceCsvFile:
             csvReader = csv.reader(faceCsvFile, delimiter=',')
             faceMatrix = []
 
